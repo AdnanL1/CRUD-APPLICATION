@@ -1,0 +1,112 @@
+/* LandingPage.css */
+body {
+  background-color: #f0f0f0bf; /* Set your desired background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+.landing-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #eaeff2; /* Blue for header background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #f39c12; /* Orange for header text */
+}
+
+.header p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333; /* Dark gray for paragraph text */
+}
+
+.crud-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.crud-icon {
+  position: relative; /* Set position to relative */
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #e74c3c; /* Red for icon backgrounds */
+  color: #fff; /* White icon text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  animation: fadeIn 0.5s ease-in-out; /* Add a fade-in animation */
+  animation-fill-mode: both; /* Ensure the icon stays visible after the animation */
+  opacity: 0; /* Start with 0 opacity */
+}
+
+/* Increase the font size of icons for larger screens */
+@media (min-width: 768px) {
+  .crud-icon {
+    font-size: 32px;
+  }
+}
+
+/* Add animations for each CRUD icon with different delays */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.crud-icon:nth-child(1) {
+  animation-delay: 0.2s; /* Delay for the first icon */
+}
+
+.crud-icon:nth-child(2) {
+  animation-delay: 0.4s; /* Delay for the second icon */
+}
+
+.crud-icon:nth-child(3) {
+  animation-delay: 0.6s; /* Delay for the third icon */
+}
+
+.crud-icon:nth-child(4) {
+  animation-delay: 0.8s; /* Delay for the fourth icon */
+}
+
+/* Add hover animations to the CRUD icons */
+.crud-icon:hover {
+  transform: scale(1.1);
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Add a subtle box shadow on hover */
+.crud-icon:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add symbols below the icons */
+.crud-icon:nth-child(1)::after {
+  display: block;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.crud-icon:nth-child(2)::after {
+  display: block;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #fff;
+}
